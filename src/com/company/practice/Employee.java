@@ -42,4 +42,11 @@ public class Employee {
         System.out.println("Name and Id : "+getName()+ getId() );
         return getName()+ getId();
     }
+    public  void addSkills(String[] skills){
+
+        for (String skill : skills) {
+            System.out.println(skill);
+        }
+
+    }
 }
