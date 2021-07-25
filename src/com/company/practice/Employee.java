@@ -45,7 +45,7 @@ public class Employee {
     public  void addSkills(String[] skills){
 
         for (String skill : skills) {
-            System.out.println(skill);
+            System.out.println( "Skill:" + skill);
         }
 
     }
