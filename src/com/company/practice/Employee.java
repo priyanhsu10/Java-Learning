@@ -43,9 +43,10 @@ public class Employee {
         return getName()+ getId();
     }
     public  void addSkills(String[] skills){
-
+        System.out.println( "Employee skill are below");
         for (String skill : skills) {
             System.out.println( "Skill:" + skill);
+
         }
 
     }
