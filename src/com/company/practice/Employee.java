@@ -37,4 +37,7 @@ public class Employee {
     public  void CheckThisAndObjectRefferSame(Employee e){
         System.out.println(" Cally and istance are same: "+( e==this));
     }
+    public  String getIdName(){
+      return getName()+ getId();
+    }
 }
