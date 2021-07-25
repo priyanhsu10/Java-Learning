@@ -1,9 +1,26 @@
 package com.company;
 
+
+import java.util.Arrays;
+import java.util.IntSummaryStatistics;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        System.out.println("First Java Program");
+        Scanner reader= new Scanner(System.in);
+        System.out.println("Enter the numbers in ");
+        IntSummaryStatistics numbers= Arrays.stream(reader.nextLine().split(" "))
+                .mapToInt(e->Integer.parseInt(e)).summaryStatistics();
+        System.out.println(numbers);
+//
+//        String s = "Priyanshu";
+//        int[] nums = {10, 12, 23, 34, 34};
+//        int aa= s.chars().parallel().peek(x->System.out.println(x)).peek(x->System.out.println((char)x)).sum();
+     //   int sum = s.toCharArray().
+//                map(x -> (int)x * (int)x)
+//                .peek(e -> System.out.println(e+ " thread: " + Thread.currentThread().getId()))
+//                .sum();
+//        System.out.println("Sum of number =" + aa);
     }
 }
