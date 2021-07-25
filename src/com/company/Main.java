@@ -28,7 +28,7 @@ public class Main {
 
         Employee e= new Employee(1,"Priyanshu","dev");
         e.CheckThisAndObjectRefferSame(e);
-        Department d= new Department(1,"Dev");
+        Department d= new Department(1,"Dev -fix bug");
   System.out.println(d);
     }
 }
